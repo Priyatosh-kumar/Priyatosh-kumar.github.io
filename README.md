@@ -36,11 +36,9 @@ The portfolio is designed to be not just a static page, but an engaging experien
 
 * **Responsive Design:** A clean, mobile-first design that looks great on all devices, from phones to desktops.
 * **Dual-Theme Mode:** Automatically switches between a light and dark theme based on the user's operating system preference.
-* **Interactive Welcome Section:** A two-column hero section with an animated portrait and a "Download Resume" button with a playful hover animation.
 * **Animated "Hello" GIF:** A waving hand GIF appears next to the heading on hover (desktop) or is always visible (mobile) for a personal touch.
 * **Dynamic Sidebars:** Left and right sidebars for navigation and social links that appear as you scroll and hide on the contact page for a cleaner layout.
 * **Active Link Highlighting:** The current section is always highlighted in the sidebars and header for clear navigation.
-* **Animated Skill Badges:** The tech stack is displayed using modern, GitHub-style badges that animate into view.
 * **Engaging Contact Section:** Features animated social link tabs for a unique way to connect.
 
 ---
