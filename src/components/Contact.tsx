@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
               </a>
             </li>
              <li className="social-link-item">
-              <a href="mailto:priyatosh.dev@gmail.com">
+              <a href="mailto:priyatoshkumar.dev@gmail.com">
                 <div className="social-icon"><MailIcon /></div>
                 <span className="social-text">Mail</span>
               </a>

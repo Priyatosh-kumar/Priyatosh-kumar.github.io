@@ -86,7 +86,7 @@ const Header: React.FC<{ activeSection: string }> = ({ activeSection }) => {
             <div className="mobile-menu-socials">
               <a href="https://linkedin.com" onClick={closeMenu} target="_blank" rel="noopener noreferrer"><LinkedInIcon/></a>
               <a href="https://github.com" onClick={closeMenu} target="_blank" rel="noopener noreferrer"><GitHubIcon/></a>
-              <a href="mailto:priyatosh.dev@gmail.com" onClick={closeMenu} target="_blank" rel="noopener noreferrer"><MailIcon/></a>
+              <a href="mailto:priyatoshkumar.dev@gmail.com" onClick={closeMenu} target="_blank" rel="noopener noreferrer"><MailIcon/></a>
             </div>
           </motion.div>
         )}

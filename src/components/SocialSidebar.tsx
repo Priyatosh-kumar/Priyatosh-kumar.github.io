@@ -28,7 +28,7 @@ const SocialSidebar: React.FC<{ activeSection: string }> = ({ activeSection }) =
       <a href="https://x.com/00priyatosh00" target="_blank" rel="noopener noreferrer"><TwitterIcon /></a>
       
       {/* 2. Add the new mail link here */}
-      <a href="mailto:priyatosh.dev@gmail.com"><MailIcon /></a>
+      <a href="mailto:priyatoshkumar.dev@gmail.com"><MailIcon /></a>
     </motion.div>
   );
 };
