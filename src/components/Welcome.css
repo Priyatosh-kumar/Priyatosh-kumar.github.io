@@ -1,172 +1,144 @@
 /* --- WELCOME SECTION STYLES --- */
-
 .welcome-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    padding: 2rem;
-    margin-top: 3rem;
-    box-sizing: border-box;
-  }
-  
-  .welcome-content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* CORRECTED: Prevents horizontal overflow */
-    max-width: 1100px; /* Kept your max-width */
-    gap: 4rem;
-  }
-  
-  /* --- Left Column (Text & Button) --- */
-  .welcome-text-column {
-    flex: 1.5; /* A more balanced flex ratio */
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .welcome-heading {
-    font-size: 4rem; /* Slightly increased for more impact */
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    line-height: 1.1;
-    color: var(--text-primary);
-    transform: rotate(-3deg) skewX(-3deg);
-    margin-bottom: 1.5rem;
-  }
-  
-  .welcome-tagline {
-    font-size: 1.25rem; /* Adjusted for better balance */
-    margin-bottom: 2.5rem;
-    max-width: 600px;
-    color: var(--text-secondary);
-    line-height: 1.6;
-  }
-  
-  
-  /* --- Right Column (Image) --- */
-  .welcome-image-column {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .welcome-portrait-container {
-    width: 350px;
-    height: 350px;
-    position: relative;
-  }
-  
-  .welcome-portrait-shadow {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 20px;
-    background: var(--text-secondary);
-    border-radius: 50%;
-    filter: blur(20px);
-    opacity: 0.3;
-  }
-  
-  .welcome-portrait {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  
-  /* --- RESPONSIVE ADJUSTMENTS --- */
-  
-  /* Medium Screens (Tablets, ~960px and below) */
-  @media (max-width: 960px) {
-    .welcome-content-wrapper {
-      flex-direction: column; /* Stack columns earlier */
-      text-align: center;
-      gap: 2rem;
-    }
-  
-    .welcome-text-column {
-      order: 2; /* Text appears below image */
-      align-items: center;
-      flex: 0; /* Reset flex grow */
-    }
-  
-    .welcome-image-column {
-      order: 1; /* Image appears on top */
-      flex: 0;
-      margin-bottom: 1rem;
-    }
-  
-    .welcome-heading {
-      font-size: 3rem;
-      transform: none; /* Straighten the text on smaller screens */
-    }
-  
-    .welcome-tagline {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-    }
-  
-    .welcome-portrait-container {
-      width: 300px;
-      height: 300px;
-    }
-  }
-  
-  /* Small Screens (Phones, ~500px and below) */
-  @media (max-width: 500px) {
-    .welcome-heading {
-      font-size: 2.5rem;
-    }
-    .welcome-portrait-container {
-      width: 220px;
-      height: 220px;
-    }
-  }
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 2rem; /* Add padding for smaller screens */
+  box-sizing: border-box;
+}
 
-  /* --- NEW GIF and SUBHEADING STYLES --- */
+.welcome-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  gap: 4rem;
+}
 
-/* Make the heading a positioning container for the GIF */
-/* --- Find and replace this rule --- */
+/* --- Left Column (Text & Button) --- */
+.welcome-text-column {
+  flex: 1.5;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .welcome-heading {
-    position: relative;
-    display: inline-block; /* This makes the container wrap the text */
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: -0.05em;
-    line-height: 1.1;
-    color: var(--text-primary);
-    transform: rotate(-3deg) skewX(-3deg);
-    margin-bottom: 0.5rem;
-    /* ADDED: This ensures it doesn't stretch in the flex container */
-    align-self: flex-start; 
+  position: relative;
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+  color: var(--text-primary);
+  transform: rotate(-3deg) skewX(-3deg);
+  margin-bottom: 0.5rem;
+  align-self: flex-start;
+}
+
+.welcome-tagline {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 2.5rem 0;
+  max-width: 600px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.waving-hand-gif {
+  position: absolute;
+  top: -15px;
+  right: -60px;
+  width: 80px;
+  height: auto;
+  pointer-events: none;
+}
+
+
+/* --- Right Column (Image) --- */
+.welcome-image-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-portrait-container {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+
+.welcome-portrait-shadow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 20px;
+  background: var(--text-secondary);
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0.3;
+}
+
+.welcome-portrait {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 960px) {
+  .welcome-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
   }
-  
-  /* --- Find and replace this rule --- */
+
+  .welcome-text-column {
+    order: 2; /* Text appears below image */
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome-image-column {
+    order: 1; /* Image appears on top */
+    margin-bottom: 2rem;
+  }
+
+  .welcome-heading {
+    transform: none; /* Straighten text */
+    align-self: center;
+  }
+
+  .welcome-portrait-container {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome-heading {
+    font-size: 2.5rem;
+  }
+  .welcome-tagline {
+      font-size: 1rem;
+  }
+  .welcome-portrait-container {
+    width: 220px;
+    height: 220px;
+  }
   .waving-hand-gif {
-    position: absolute;
-    top: -15px;      /* Adjust vertical position */
-    right: -60px;    /* Adjust horizontal position to be just outside the text */
-    width: 80px;
-    height: auto;
-    pointer-events: none;
+    width: 60px;
+    right: -20px;
+    top: -10px;
   }
-  
-  /* Responsive adjustments for the GIF */
-  @media (max-width: 768px) {
-    .waving-hand-gif {
-      width: 60px;
-      right: -20px;
-      top: -10px;
-    }
-  }
+}

@@ -30,7 +30,6 @@ const Welcome: React.FC = () => {
                     initial="hidden"
                     animate="visible"
                 >
-                    {/* --- UPDATED HEADING --- */}
                     <motion.h1
                         className="welcome-heading"
                         variants={itemVariants}
@@ -53,7 +52,6 @@ const Welcome: React.FC = () => {
                         </AnimatePresence>
                     </motion.h1>
 
-                    {/* This is now also an h1 to match the style, but has no hover effect */}
                     <motion.h1 className="welcome-heading" variants={itemVariants}>
                         I'm Priyatosh Kumar
                     </motion.h1>
@@ -67,7 +65,6 @@ const Welcome: React.FC = () => {
                     </motion.div>
                 </motion.div>
 
-                {/* --- Right Column (No changes needed here) --- */}
                 <motion.div
                     className="welcome-image-column"
                     initial={{ opacity: 0, scale: 0.5 }}
