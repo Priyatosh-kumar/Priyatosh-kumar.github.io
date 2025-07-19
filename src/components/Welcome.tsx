@@ -4,9 +4,12 @@ import './Welcome.css';
 import portraitImage from '../assets/priya.png';
 import helloGif from '../assets/hello.gif';
 import AnimatedButton from './AnimatedButton';
+import { useMediaQuery } from '../hooks/useMediaQuery'; // 1. Import the new hook
 
 const Welcome: React.FC = () => {
     const [isHovered, setIsHovered] = useState(false);
+    // 2. Check if the screen is mobile-sized (768px or less)
+    const isMobile = useMediaQuery('(max-width: 768px)');
 
     const containerVariants: Variants = {
         hidden: { opacity: 0 },
@@ -37,8 +40,9 @@ const Welcome: React.FC = () => {
                         onHoverEnd={() => setIsHovered(false)}
                     >
                         Hello There!
+                        {/* 3. Update the condition to show the GIF on hover OR if on mobile */}
                         <AnimatePresence>
-                            {isHovered && (
+                            {(isHovered || isMobile) && (
                                 <motion.img
                                     src={helloGif}
                                     alt="Waving hand animation"
@@ -57,7 +61,7 @@ const Welcome: React.FC = () => {
                     </motion.h1>
 
                     <motion.p className="welcome-tagline" variants={itemVariants}>
-                    Based in Bihar, India, I’m a fresher exploring the tech landscape—working across and discovering my interests in data, machine learning, software development, and infrastructure. I'm driven by curiosity, a love for learning, and a problem-solving mindset focused on building clean, efficient solutions.
+                        Based in Bihar, India, I’m a fresher exploring the tech landscape—working across and discovering my interests in data, machine learning, software development, and infrastructure. I'm driven by curiosity, a love for learning, and a problem-solving mindset focused on building clean, efficient solutions.
                     </motion.p>
                     
                     <motion.div variants={itemVariants}>

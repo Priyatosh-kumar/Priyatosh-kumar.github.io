@@ -137,8 +137,11 @@
     height: 220px;
   }
   .waving-hand-gif {
-    width: 60px;
-    right: -20px;
-    top: -10px;
-  }
+  position: absolute;
+  top: -15px;
+  right: -80px; /* UPDATED: Changed from -60px to -80px */
+  width: 60px;
+  height: auto;
+  pointer-events: none;
+}
 }
