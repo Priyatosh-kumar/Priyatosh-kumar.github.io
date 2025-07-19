@@ -75,6 +75,6 @@ To run this project locally, follow these simple steps:
 
 I'm always open to connecting, collaborating, or just chatting about tech. Feel free to reach out!
 
-* **Email:** [priyatoshkumar.dec@gmail.com](mailto:priyatoshkumar.dec@gmail.com)
+* **Email:** [priyatoshkumar.dec@gmail.com](mailto:priyatoshkumar.dev@gmail.com)
 * **LinkedIn:** [linkedin.com/in/priyatosh-k/](https://www.linkedin.com/in/priyatosh-k/)
 * **GitHub:** [@Priyatosh-kumar](https://github.com/Priyatosh-kumar)
