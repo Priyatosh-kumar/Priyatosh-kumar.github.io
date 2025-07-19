@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# My Interactive Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the repository for my personal portfolio website. This project is a fully responsive, single-page application built with React and TypeScript, designed to showcase my skills and projects in a clean, modern, and highly interactive format. The site features a dynamic theme that adapts to the user's system preferences (light/dark mode) and is packed with smooth animations powered by Framer Motion.
 
-## Available Scripts
+**🚀 Live Demo:** [**https://priyatosh-kumar.github.io/**](https://priyatosh-kumar.github.io/)
 
-In the project directory, you can run:
+![Portfolio Screenshot](https://i.imgur.com/your-screenshot-url.png)
+*Note: It's highly recommended to take a screenshot of your finished portfolio and replace the placeholder URL above.*
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧰 Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This portfolio was built using a modern and powerful stack to ensure a high-quality user experience and maintainable codebase.
 
-### `npm test`
+* **Core Framework:**
+    * **React:** For building the component-based user interface.
+    * **TypeScript:** For adding static typing and improving code quality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **Animation:**
+    * **Framer Motion:** Used for all page load animations, scroll-triggered effects (like the disappearing header), active tab indicators, and other UI motion effects.
+    * **GSAP (GreenSock Animation Platform):** Powers the complex, interactive grid backgrounds that follow the user's mouse.
 
-### `npm run build`
+* **Styling:**
+    * **CSS Modules / Component-Based CSS:** For component-scoped styles.
+    * **CSS Variables:** For creating a seamless and themeable design that adapts to light and dark modes automatically.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* **Utilities:**
+    * **React Intersection Observer:** To detect when sections scroll into view, triggering animations and updating the active navigation links.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Features
 
-### `npm run eject`
+The portfolio is designed to be not just a static page, but an engaging experience. Key features include:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* **Responsive Design:** A clean, mobile-first design that looks great on all devices, from phones to desktops.
+* **Dual-Theme Mode:** Automatically switches between a light and dark theme based on the user's operating system preference.
+* **Interactive Welcome Section:** A two-column hero section with an animated portrait and a "Download Resume" button with a playful hover animation.
+* **Animated "Hello" GIF:** A waving hand GIF appears next to the heading on hover (desktop) or is always visible (mobile) for a personal touch.
+* **Dynamic Sidebars:** Left and right sidebars for navigation and social links that appear as you scroll and hide on the contact page for a cleaner layout.
+* **Active Link Highlighting:** The current section is always highlighted in the sidebars and header for clear navigation.
+* **Animated Skill Badges:** The tech stack is displayed using modern, GitHub-style badges that animate into view.
+* **Engaging Contact Section:** Features animated social link tabs for a unique way to connect.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🚀 Setup and Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To run this project locally, follow these simple steps:
 
-## Learn More
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Priyatosh-kumar/Priyatosh-kumar.github.io.git](https://github.com/Priyatosh-kumar/Priyatosh-kumar.github.io.git)
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2.  **Navigate into the project directory:**
+    ```bash
+    cd Priyatosh-kumar.github.io
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+4.  **Start the development server:**
+    ```bash
+    npm start
+    ```
+
+5.  Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio live.
+
+---
+
+## 📬 Contact
+
+I'm always open to connecting, collaborating, or just chatting about tech. Feel free to reach out!
+
+* **Email:** [priyatoshkumar.dec@gmail.com](mailto:priyatoshkumar.dec@gmail.com)
+* **LinkedIn:** [linkedin.com/in/priyatosh-k/](https://www.linkedin.com/in/priyatosh-k/)
+* **GitHub:** [@Priyatosh-kumar](https://github.com/Priyatosh-kumar)
