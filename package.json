@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Priyatosh-kumar.github.io/my-portfolio",
   "dependencies": {
     "@react-three/drei": "^10.5.1",
     "@react-three/fiber": "^9.2.0",
