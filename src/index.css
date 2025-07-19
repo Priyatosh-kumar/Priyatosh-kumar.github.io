@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* --- LIGHT MODE (DEFAULT) --- */
+  --background: rgb(250, 251, 255);
+  --text-primary: rgb(40, 40, 40);
+  --text-secondary: rgb(100, 100, 100);
+  --primary-accent: rgb(54, 87, 213);
+  --header-bg: rgba(250, 251, 255, 0.75);
+  --card-bg: #ffffff;
+  --border-color: rgba(0, 0, 0, 0.08);
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --- DARK MODE (INSPIRED BY MOTION.DEV) --- */
+    --background: #0B0B0E;
+    --text-primary: #F0F0F0;
+    --text-secondary: #bbc2ac;
+    --primary-accent: #77e9aa;
+    --header-bg: rgba(11, 11, 14, 0.75);
+    --card-bg: #1A1A1D;
+    --border-color: rgba(255, 255, 255, 0.1);
+  }
 }
+
+/* === ROOT BODY STYLES WITH BACKGROUND === */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  background-color: var(--background);
+  color: var(--text-secondary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* --- Root Background for the entire page --- */
+  background-image:
+    radial-gradient(ellipse at center, rgba(247, 247, 247, 0) 50%, var(--background) 90%),
+    url(https://framerusercontent.com/images/tUtxe262x279Ke12e2xyHGFXKrg.svg);
+  background-size: auto, 32px;
+  background-attachment: fixed;
+}
+
+@media (prefers-color-scheme: dark) {
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+  }
+}
+
+
+/* Other global styles */
+h1, h2, h3, h4, h5, h6 { color: var(--text-primary); }
+p { color: var(--text-secondary); line-height: 1.7; }
+a { color: var(--primary-accent); text-decoration: none; }
