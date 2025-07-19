@@ -61,7 +61,7 @@ const Welcome: React.FC = () => {
                     </motion.h1>
 
                     <motion.p className="welcome-tagline" variants={itemVariants}>
-                        Based in Bihar, India, I’m a fresher exploring the tech landscape—working across and discovering my interests in data, machine learning, software development, and infrastructure. I'm driven by curiosity, a love for learning, and a problem-solving mindset focused on building clean, efficient solutions.
+                        Based in Punjab, India, I’m a fresher exploring the tech landscape—working across and discovering my interests in data, machine learning, software development, and infrastructure. I'm driven by curiosity, a love for learning, and a problem-solving mindset focused on building clean, efficient solutions.
                     </motion.p>
                     
                     <motion.div variants={itemVariants}>
