@@ -1,4 +1,4 @@
-# My Interactive Portfolio
+# My Portfolio
 
 Welcome to the repository for my personal portfolio website. This project is a fully responsive, single-page application built with React and TypeScript, designed to showcase my skills and projects in a clean, modern, and highly interactive format. The site features a dynamic theme that adapts to the user's system preferences (light/dark mode) and is packed with smooth animations powered by Framer Motion.
 
@@ -75,6 +75,6 @@ To run this project locally, follow these simple steps:
 
 I'm always open to connecting, collaborating, or just chatting about tech. Feel free to reach out!
 
-* **Email:** [priyatoshkumar.dec@gmail.com](mailto:priyatoshkumar.dev@gmail.com)
+* **Email:** [priyatoshkumar.dev@gmail.com](mailto:priyatoshkumar.dev@gmail.com)
 * **LinkedIn:** [linkedin.com/in/priyatosh-k/](https://www.linkedin.com/in/priyatosh-k/)
 * **GitHub:** [@Priyatosh-kumar](https://github.com/Priyatosh-kumar)
