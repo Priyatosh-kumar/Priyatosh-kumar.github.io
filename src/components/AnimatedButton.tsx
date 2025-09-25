@@ -6,7 +6,7 @@ import './AnimatedButton.css'; // This will be its own dedicated stylesheet
 const AnimatedButton: React.FC = () => {
   return (
     <a
-      href="/Priyatosh_Kumar_Resume.pdf"
+      href="https://drive.google.com/file/d/1ilMIm_t_fnqMwi4hqOdEjfiPVPGyRfIF/view?usp=drivesdk"
       download
       className="button button--pen"
     >
